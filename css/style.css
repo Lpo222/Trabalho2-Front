@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: NetLojaFont;
+    src: url(fonte/overseer/Overseer.otf);
+}
+
+@font-face {
+    font-family: NetLojaBold;
+    src: url(fonte/overseer/Overseer\ Bold.otf);
+}
+
+@font-face {
+    font-family: NetLojaItalicBold;
+    src: url(fonte/overseer/Overseer\ Bold\ Italic.otf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: NetLojaFont;
+    background-color: #272727;
+    color: #ff9900;
+    line-height: 1.6;
+}
+
+h1 {
+    font-family: NetLojaBold;
+    font-size: 4rem;
+    padding-left: 14%;
+    padding-top: 3%;
+    padding-bottom: 1%;
+}
+
+h2 {
+    font-family: NetLojaItalicBold;
+    font-size: 2.5rem;
+    padding-left: 14%;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    color: #0091FF;
+}
+
+h6 {
+    color: #3979AA;
+    font-size: 1.5rem;
+}
+
+.imagem-banner {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 3%;
+}
+
+.lista {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu-link {
+    font-size: 3rem;
+    text-decoration: none;
+    color: #0091FF;
+}
+
+#menu-menu {
+    color: #272727;
+}
+
+header {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #ff9900;
+}
+
+.card {
+    padding-top: 5%;
+    margin-bottom: 2%;
+    background-color: #ffb03a;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+footer {
+    padding: 30px 20px;
+    margin-top: 5%;
+    background-color: #ff9900;
+}
+
+.container-footer {
+    max-width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.texto-footer {
+    color: #272727;
+    font-family: NetLojaBold;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+
+.lista-footer {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    align-items: center;
+}
+
+.footer-link {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #0091FF;
+    font-family: NetLojaFont;
+}
+
+#footer-menu {
+    color: #272727;
+}
+
+#produtos {
+    color: #272727;
+}
+
+.container-produto-selecionado {
+    display: flex;
+    max-width: 80%;
+    margin: 0 auto 5% auto;
+    gap: 5%;
+    align-items: center;
+}
+
+.produto-esquerda {
+    flex: 1;
+    text-align: center;
+}
+
+.imagem-produto-foco {
+    max-width: 100%;
+    height: auto;
+    background-color: #ffb03a;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.produto-direita {
+    flex: 1;
+}
+
+.produto-direita h2 {
+    padding-left: 0;
+    margin-bottom: 2%;
+}
+
+.preco-detalhe {
+    font-size: 2rem;
+    margin-bottom: 4%;
+}
+
+.descricao-detalhada {
+    margin-bottom: 3%;
+    text-align: justify;
+}
+
+.container-custom {
+    max-width: 80%;
+    margin: 0 auto 5% auto;
+}
+
+.vitrine-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.vitrine-item {
+    flex: 1 1 100%;
+}
+
+@media (min-width: 768px) {
+    .vitrine-item {
+        flex: 1 1 calc(50% - 10px); 
+    }
+}
+
+@media (min-width: 992px) {
+    .vitrine-item {
+        flex: 1 1 calc(25% - 15px);
+    }
+}
